@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Canvas Image Control</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>캔버스로 이미지를 열심히 다뤄봅니다 ^^*</h1>
+        <hr/>
+        <div>
+            <h2>Image 견본 선택</h2>
+            <div id="imageSelector">
+                <button class="sample" path="/resource/B.jpg">Sample Image A</button>
+                <button class="sample" path="/resource/A.jpg">Sample Image B</button>
+                <button id="upload">사진 업로드</button>
+                <input id="uploadInput" type="file" accept="image/png, image/jpeg" >
+            </div>
+        </div>
+        <div>
+            <button id="mosaic">모자이크</button>
+        </div>
+        <div id="imageRenderer">
+        </div>
+    </div>
+    <div id="canvasRenderer">
+        <div id="close">닫기</div>
+        <div id="canvasWrapper">
+        </div>
+    </div>
+</body>
+<script src="./mosaic.js"></script>
+<script src="./script.js"></script>
+</html>
